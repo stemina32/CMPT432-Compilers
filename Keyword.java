@@ -11,5 +11,6 @@ public class Keyword extends token {
 	  	this.lexeme = lexeme;
   }
   
-  public static final Keyword
+//AND keyword with lexeme && and a tag
+  public static final Keyword AND = new Keyword("&&", Tag.AND)
 }

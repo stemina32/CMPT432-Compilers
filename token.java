@@ -1,15 +1,15 @@
-package lexer;
 
-//Main class for the lexer
-public class Token {
-	
-	
-//Declaring attribute at integer and naming it tag
-	public final int tag;
-	
-	public Token(int tag) {
-		
-		this.tag = tag;
-	}
-	
+// JavaScript Document
+
+//Defining a new token
+function Token(token, value, line, col) {
+	this.type = token;
+	this.value = value;
+	this.line = line;
+	this.column = col;
 }
+
+//Check token function
+Token.is = function (check) {
+	return this.type === check;
+};
